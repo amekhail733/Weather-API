@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <title>Return Weather</title>
+    <style>
+        *{
+            font-family: 'Itim', cursive;
+            margin:0px;
+            padding:0px;
+        }
+        body{
+            display: grid;
+            justify-content: center;
+            background-color: skyblue;
+            text-align: center;
+            margin-top:10vh;
+        }
+        #prompts{
+            padding:50px;
+            width:30vw;
+            height:20vh;
+            background-color: white;
+        }
+        #city{
+            width:300px;
+            height:30px;
+            padding:5px;
+        }
+        #but:hover{
+            background-color: black;
+            color:white;
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>The weather app</h1>
+    <form id="prompts">
+        <p>Enter city name:</p>
+        <input id="city" type="text"><br>
+        <button id="but" onclick="returnWeather(event)" style="background-color:green; transition:0.3s;width:100px; height:35px;">Try it!</button><br><br>
+        <p id="temp"></p>
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
